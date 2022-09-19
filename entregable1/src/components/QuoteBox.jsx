@@ -1,13 +1,23 @@
 import React from 'react'
 
-const QuoteBox = ({randonQuote}) => {
+const QuoteBox = ({randonQuote,randonColor,getRandonAll}) => {
 
-    console.log(randonQuote);
+   // console.log(randonQuote);
+    const colorObject ={
+      color: randonColor
+    }
+    const colorObjButton={
+      backgroundColor: randonColor
+    }
   return (
-    <article className='card'>
+    <article style={colorObject} className='card'>
         <p className='card__quote'>{randonQuote.quote}</p>
         <h1 className='card__author'>{randonQuote.author}</h1>
-        <button>&#62;</button>
+        <button 
+          className='card__btn' 
+          style={colorObjButton}
+          onClick={getRandonAll}
+          >&#62;</button>
     </article>
   )
 }
