@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import './App.css'
 import QuoteBox from './components/QuoteBox'
+import BtnColor from './components/BtnColor'
 import quotes from './json/quotes.json'
 import color from './utils/color'
 
@@ -34,12 +35,15 @@ function App() {
   return (
     <div style={backgroundObject} className="App">
    
-      <h1>ENTREGABLE 1</h1>
+  
       {/* CON LAS PROPS PASAMOS LA INFORMACION AL COMPONENTE */}
       <QuoteBox 
          randonQuote={randonQuote}
          randonColor={randonColor}
-         getRandonAll={getRandonAll}
+        
+      />
+      <BtnColor 
+       getRandonAll={getRandonAll}
       />
     </div>
   )

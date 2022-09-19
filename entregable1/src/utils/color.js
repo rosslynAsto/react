@@ -1,2 +1,2 @@
-const color = ['#FF9494','#FFD1D1','#FFE3E1','#FFF5E4','#698474','#889E81','#BAC7A7','#A1DD70','#A23131'] 
+const color = ['#182747','#FD841F','#E14D2A','#CD104D','#9C2C77','#889E81','#367E18','#A1DD70','#562B08'] 
 export default color
