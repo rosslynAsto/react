@@ -44,6 +44,7 @@ function App() {
       />
       <BtnColor 
        getRandonAll={getRandonAll}
+       randonColor={randonColor}
       />
     </div>
   )
